@@ -53,7 +53,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "mingming" => "nslogyanmingyue@126.com" }
+  s.author             = { "yan2750" => "nslogyanmingyue@126.com" }
   s.ios.deployment_target = "9.0"
   s.platform = :ios, "9.0"
   # Or just: s.author    = ""
@@ -94,7 +94,7 @@ Pod::Spec.new do |s|
   #
 
   #s.source_files  = "FirstPodApp", "test/*.{h,m}"
-  s.source_files  = "FirstPodApp/**/*.{h,m}"
+   s.source_files  = "FirstPodApp/*.{h,m}"
    s.requires_arc = true
   #s.exclude_files = "Classes/Exclude"
 

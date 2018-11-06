@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "FirstPodApp"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "A short description of FirstPodApp."
 
   # This description is used to generate tags and improve search results.
@@ -94,7 +94,7 @@ Pod::Spec.new do |s|
   #
 
   #s.source_files  = "FirstPodApp", "test/*.{h,m}"
-   s.source_files  = "FirstPodApp/*.{h,m}"
+   s.source_files  = "FirstPodApp/*"
    s.requires_arc = true
   #s.exclude_files = "Classes/Exclude"
 

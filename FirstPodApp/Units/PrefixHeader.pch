@@ -1,0 +1,19 @@
+//
+//  PrefixHeader.pch
+//  BaseClass
+//
+//  Created by my y on 2018/10/30.
+//  Copyright © 2018年 myy.company.com. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define kScreenWidth         ([UIScreen mainScreen].bounds.size.width)
+#define kScreenHeight        ([UIScreen mainScreen].bounds.size.height)
+#define kIsIphoneX           ((kScreenWidth == 320 && kScreenHeight == 568) ? true : false)
+#define kStatusBarHeight     (kIsIphoneX ? 44 : 20)
+#define kNavigationHeight    44
+#define kNavigationAndStatusBarHeight  (kStatusBarHeight + kNavigationHeight)
+
+#endif /* PrefixHeader_pch */

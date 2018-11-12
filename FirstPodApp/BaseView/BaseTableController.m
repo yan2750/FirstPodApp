@@ -12,14 +12,14 @@
 
 #import "BaseTableModel.h"
 #import "UIResponder+YMM_LoadFromNib.h"
-#import "BaseNavStyle.h"
+//#import "BaseNavStyle.h"
 #import "PrefixHeader.pch"
 
 const NSString *cellPrefix = @"cell";
 
 @interface BaseTableController () <UITableViewDelegate, UITableViewDataSource>
 
-@property (nonatomic, strong) BaseNavStyle *navStyle;
+//@property (nonatomic, strong) BaseNavStyle *navStyle;
 
 @end
 
@@ -36,19 +36,19 @@ const NSString *cellPrefix = @"cell";
     [self addHeader];
     [self addFotter];
     
-    [self setNavStyle];
+    //[self setNavStyle];
 }
 
-// 设置导航栏的样式
-- (void)setNavStyle {
-    self.navStyle = [[BaseNavStyle alloc] initWithVC:self];
-}
+//// 设置导航栏的样式
+//- (void)setNavStyle {
+//    self.navStyle = [[BaseNavStyle alloc] initWithVC:self];
+//}
 
 // 子视图已经布局完成调用的方法
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     
-    [self.navStyle setNormalStyle];
+    // [self.navStyle setNormalStyle];
 }
 
 - (void)setCellAry:(NSArray<NSString *> *)cellAry {

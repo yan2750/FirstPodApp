@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "FirstPodApp"
-  s.version      = "1.0.5"
+  s.version      = "1.0.6"
   s.summary      = "A short description of FirstPodApp."
 
   # This description is used to generate tags and improve search results.

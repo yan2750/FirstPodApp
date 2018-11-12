@@ -8,7 +8,15 @@
 
 #import "BaseTableView.h"
 #import "UIResponder+YMM_LoadFromNib.h"
-#import <MJRefresh.h>
+#import "MJRefresh.h"
+#import "PrefixHeader.pch"
+
+//#define kScreenWidth         ([UIScreen mainScreen].bounds.size.width)
+//#define kScreenHeight        ([UIScreen mainScreen].bounds.size.height)
+//#define kIsIphoneX           ((kScreenWidth == 320 && kScreenHeight == 568) ? true : false)
+//#define kStatusBarHeight     (kIsIphoneX ? 44 : 20)
+//#define kNavigationHeight    44
+//#define kNavigationAndStatusBarHeight  (kStatusBarHeight + kNavigationHeight)
 
 @interface BaseTableView() <UITableViewDelegate, UITableViewDataSource>
 
@@ -58,7 +66,7 @@
 
 - (UITableView *)tableView {
     if (!_tableView) {
-        CGRect frame = CGRectMake(0, kNavigationAndStatusBarHeight, kScreenWidth, kScreenHeight);
+        CGRect frame = CGRectMake(0, kNavigationAndStatusBarHeight, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
         self.tableView = [[UITableView alloc] initWithFrame:frame style:UITableViewStylePlain];
         self.tableView.frame = self.bounds;
         self.tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0);
